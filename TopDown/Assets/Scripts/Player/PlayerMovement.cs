@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour {
 
     public float speed;
     private Rigidbody2D rigidBody;
+    public int health = 10;
     Vector2 moveVelocity;
     // Start is called before the first frame update
     void Start() {
