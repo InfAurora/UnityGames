@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2440572702453583628}
   - component: {fileID: 4964490153536857890}
   - component: {fileID: 2716103752167643327}
+  - component: {fileID: -3482104403048573149}
   m_Layer: 0
   m_Name: Projectile
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 855597929383099925}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.6165712, y: 2.2684011, z: 0}
+  m_LocalPosition: {x: -1.556, y: 2.271, z: 0}
   m_LocalScale: {x: 2.9837499, y: 0.775, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -95,3 +96,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+--- !u!70 &-3482104403048573149
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855597929383099925}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0008977805, y: -0.0023041426}
+  m_Size: {x: 0.17665778, y: 0.17864972}
+  m_Direction: 1

@@ -7,10 +7,11 @@ public class EnemyMovement : MonoBehaviour {
     public float speed;
     private Transform playerPosition;
     private PlayerMovement player;
+    public int health = 10;
     // Start is called before the first frame update
     void Start() {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>();
-        playerPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        playerPosition = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     // Update is called once per frame
@@ -24,6 +25,14 @@ public class EnemyMovement : MonoBehaviour {
             player.health -= 1;
             Debug.Log(player.health);
             Destroy(gameObject);
+        }
+
+        if(other.CompareTag("Projectile") && health <= 0) {
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        } else if(other.CompareTag("Projectile")) {
+            Destroy(other.gameObject);
+            health--;
         }
     }
 }
