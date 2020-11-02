@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
+  enemy: {fileID: 1878668498271473917, guid: 7d3ce584983df534e88b7825328aae3f, type: 3}
 --- !u!70 &-3482104403048573149
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

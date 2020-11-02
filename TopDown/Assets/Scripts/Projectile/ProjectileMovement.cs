@@ -6,6 +6,7 @@ public class ProjectileMovement : MonoBehaviour {
 
     private Vector2 target;
     public float speed;
+    public GameObject enemy;
 
     // Start is called before the first frame update
     void Start() {
@@ -16,6 +17,7 @@ public class ProjectileMovement : MonoBehaviour {
     void Update() {
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         if(Vector2.Distance(transform.position, target) < 0.2f) {
+            Instantiate(enemy, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
