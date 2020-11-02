@@ -434,7 +434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 12
   health: 10
-  healthDisplay: {fileID: 0}
+  healthDisplay: {fileID: 1852859497}
 --- !u!114 &1347267720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -967,5 +967,6 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1200539686197909029, guid: dd2888b196b64e04c8ad5e6d923c22d3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: dd2888b196b64e04c8ad5e6d923c22d3, type: 3}
